@@ -274,20 +274,13 @@ MainWindow::MainWindow(Application* app, SystemTrayIcon* tray_icon, OSD* osd,
   ui_->tabs->addTab(playlist_list_,
                     IconLoader::Load("view-media-playlist", IconLoader::Base),
                     tr("Playlists"));
-  ui_->tabs->addTab(internet_view_,
-                    IconLoader::Load("applications-internet", IconLoader::Base),
-                    tr("Internet"));
-  ui_->tabs->addTab(
-      device_view_container_,
-      IconLoader::Load("multimedia-player-ipod-mini-blue", IconLoader::Base),
-      tr("Devices"));
-  ui_->tabs->addSpacer();
-  ui_->tabs->addTab(song_info_view_,
-                    IconLoader::Load("view-media-lyrics", IconLoader::Base),
-                    tr("Song info"));
-  ui_->tabs->addTab(artist_info_view_,
-                    IconLoader::Load("x-clementine-artist", IconLoader::Base),
-                    tr("Artist info"));
+  // ui_->tabs->addSpacer();
+  // ui_->tabs->addTab(song_info_view_,
+  //                   IconLoader::Load("view-media-lyrics", IconLoader::Base),
+  //                   tr("Song info"));
+  // ui_->tabs->addTab(artist_info_view_,
+  //                   IconLoader::Load("x-clementine-artist", IconLoader::Base),
+  //                   tr("Artist info"));
 
   // Add the now playing widget to the fancy tab widget
   ui_->tabs->addBottomWidget(ui_->now_playing);
