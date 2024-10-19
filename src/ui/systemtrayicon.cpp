@@ -60,9 +60,9 @@ QPixmap SystemTrayIcon::CreateIcon(const QPixmap& icon,
   QPainter p(&ret);
 
   // Draw the grey bit over the orange icon
-  p.setClipRegion(mask);
-  p.drawPixmap(0, 0, grey_icon);
-  p.setClipping(false);
+  // p.setClipRegion(mask);
+  // p.drawPixmap(0, 0, grey_icon);
+  // p.setClipping(false);
 
   // Draw the playing or paused icon in the top-right
   if (!current_state_icon().isNull()) {
